@@ -1,5 +1,6 @@
 package com.laioffer.staybooking.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
@@ -13,7 +14,9 @@ import javax.persistence.Table;
 public class User {
     @Id
     private String username;
+    @JsonIgnore
     private String password;
+    @JsonIgnore
     private boolean enabled;
 
     public User() {}
