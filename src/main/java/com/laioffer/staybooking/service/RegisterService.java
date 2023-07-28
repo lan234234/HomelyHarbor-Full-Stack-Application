@@ -1,5 +1,6 @@
 package com.laioffer.staybooking.service;
 
+import com.laioffer.staybooking.exception.UserAlreadyExistException;
 import com.laioffer.staybooking.model.Authority;
 import com.laioffer.staybooking.model.User;
 import com.laioffer.staybooking.model.UserRole;
@@ -25,7 +26,7 @@ public class RegisterService {
     @Transactional
     public void add(User user, UserRole role) {
         if (userRepository.existsById(user.getUsername())) {
-            throw new RuntimeException("User already exists");
+            throw new UserAlreadyExistException("User already exists");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setEnabled(true);
