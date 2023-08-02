@@ -29,6 +29,9 @@ public class Stay {
     @OneToMany(mappedBy = "stay", cascade = CascadeType.ALL, fetch=FetchType.LAZY)
     private List<StayReservedDate> reservedDates;
 
+    @OneToMany(mappedBy = "stay", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
+    private List<StayImage> images;
+
     public Stay() {}
 
     private Stay(Builder builder) {
@@ -39,6 +42,16 @@ public class Stay {
         this.guestNumber = builder.guestNumber;
         this.host = builder.host;
         this.reservedDates = builder.reservedDates;
+        this.images = builder.images;
+    }
+
+    public List<StayImage> getImages() {
+        return images;
+    }
+
+    public Stay setImages(List<StayImage> images) {
+        this.images = images;
+        return this;
     }
 
     public Long getId() {
@@ -92,6 +105,10 @@ public class Stay {
         @JsonProperty("dates")
         private List<StayReservedDate> reservedDates;
 
+        @JsonProperty("images")
+        private List<StayImage> images;
+
+
         public Builder setId(Long id) {
             this.id = id;
             return this;
@@ -129,6 +146,11 @@ public class Stay {
 
         public Stay build() {
             return new Stay(this);
+        }
+
+        public Builder setImages(List<StayImage> images) {
+            this.images = images;
+            return this;
         }
     }
 }
