@@ -29,14 +29,14 @@ public class ReservationService {
 
 
     public List<Reservation> listByGuest(String username) {
-        // return reservationRepository.findByGuest_Username(username);
-        return reservationRepository.findByGuest(new User.Builder().setUsername(username).build());
+         return reservationRepository.findByGuest_Username(username);
+//        return reservationRepository.findByGuest(new User.Builder().setUsername(username).build());
     }
 
 
     public List<Reservation> listByStay(Long stayId) {
-        // return reservationRepository.findByStay_Id(stayId);
-        return reservationRepository.findByStay(new Stay.Builder().setId(stayId).build());
+         return reservationRepository.findByStay_Id(stayId);
+//        return reservationRepository.findByStay(new Stay.Builder().setId(stayId).build());
     }
 
 
@@ -67,8 +67,8 @@ public class ReservationService {
 
     @Transactional
     public void delete(Long reservationId, String username) {
-        // Reservation reservation = reservationRepository.findByIdAndGuest_Username(reservationId, username);
-        Reservation reservation = reservationRepository.findByIdAndGuest(reservationId, new User.Builder().setUsername(username).build());
+         Reservation reservation = reservationRepository.findByIdAndGuest_Username(reservationId, username);
+//        Reservation reservation = reservationRepository.findByIdAndGuest(reservationId, new User.Builder().setUsername(username).build());
         if (reservation == null) {
             throw new ReservationNotFoundException("Reservation is not available");
         }
