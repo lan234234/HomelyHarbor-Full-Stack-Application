@@ -18,12 +18,15 @@ public interface ReservationRepository extends JpaRepository<Reservation, Long> 
 
     List<Reservation> findByGuest(User guest);
 
+    List<Reservation> findByGuest_Username(String username);
 
     List<Reservation> findByStay(Stay stay);
 
+    List<Reservation> findByStay_Id(Long stayId);
 
     Reservation findByIdAndGuest(Long id, User guest);
 
+    Reservation findByIdAndGuest_Username(Long id, String username);
 
     List<Reservation> findByStayAndCheckoutDateAfter(Stay stay, LocalDate date);
 }
