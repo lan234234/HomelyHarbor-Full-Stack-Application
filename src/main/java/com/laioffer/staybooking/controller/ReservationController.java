@@ -23,7 +23,7 @@ public class ReservationController {
     }
 
 
-    @GetMapping(value = "/reservations")
+    @GetMapping("/reservations")
     public List<Reservation> listReservations(Principal principal) {
         return reservationService.listByGuest(principal.getName());
     }
@@ -33,7 +33,7 @@ public class ReservationController {
     public void addReservation(@RequestBody Reservation reservation, Principal principal) {
         LocalDate checkinDate = reservation.getCheckinDate();
         LocalDate checkoutDate = reservation.getCheckoutDate();
-        if (checkinDate.equals(checkoutDate) || checkinDate.isAfter(checkoutDate) || checkinDate.isBefore(LocalDate.now())) {
+        if (!checkinDate.isBefore(checkoutDate) || checkinDate.isBefore(LocalDate.now())) {
             throw new InvalidReservationDateException("Invalid date for reservation");
         }
         reservation.setGuest(new User.Builder().setUsername(principal.getName()).build());
