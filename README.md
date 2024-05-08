@@ -16,43 +16,65 @@ Visit us at: [HomelyHarbor](https://dev1390.d1bx1z9zgvsmt.amplifyapp.com/)
 Explore screenshots from HomelyHarbor showcasing each of our core features:
 
 ### Authentication
+#### Register and Login with Different Role
 ![Authentication Process](.github/images/1_login.png)
+#### Logout
 ![Authentication Process](.github/images/1_logout.png)
 
 ### Upload Hotel
 ![Upload Hotel](.github/images/4_uploadStay.png)
+*Interface for hosts to upload new hotels with details and pictures.*
 
 ### Manage Hotel
-![Reserve Hotel](.github/images/3_reserveStay.png)
-![Manage Reservation](.github/images/3_manageReservation.png)
+![Manage Hotel](.github/images/5_viewStay_3.png)
+*Interface for hosts to view and delete hotels.*
+
 
 ### Search Hotel
 ![Search Hotel](.github/images/2_searchStay.png)
+*Interface for clients to search for available hotels.*
+
+#### Search Results
 ![Search Result](.github/images/2_searchResult.png)
+
+#### View Details
 ![Stay Info](.github/images/2_searchResult_2.png)
 
 ### Manage Reservation
-![Manage Reservation](.github/images/5_viewStay.png)
-![Manage Reservation](.github/images/5_viewStay_2.png)
-![Manage Reservation](.github/images/5_viewStay_3.png)
+#### Reserve Hotel
+![Reserve Hotel](.github/images/3_reserveStay.png)
+#### View and Delete Reserved Hotel
+![Manage Reservation](.github/images/3_manageReservation.png)
 
-## Technologies Used ------------------?????????????????????????
-- **Spring Boot:** Framework for building Java applications.
-- **Java:** Primary programming language for backend development.
-- **MySQL:** Database for storing user data and application data.
-- **HTML, CSS, JavaScript:** Core technologies for building web frontends.
-- **React:** JavaScript library for building user interfaces.
-- **Node.js:** JavaScript runtime for building scalable network applications.
-- **AntDesign:** UI framework for designing elegant and responsive components.
-- **AWS RDS:**
-- **Google Cloud Storage:**
-- **Google Compute Engine:**
-- **Google App Engine:**
-- **Google GeoEncoding API:**
-- **Google Maps JavaScript API:**
-- **GeoIndex:** Tool for geospatial querying and indexing.
-- **ElasticSearch:** Search engine to enhance data retrieval capabilities.
-- **Token-based Authentication:** Method for securing user sessions and data.
+
+## Technologies Used
+
+### Backend
+- **Spring Boot:** Framework for building scalable, production-ready Java applications with ease, providing a suite of features like dependency injection, data access, and web APIs.
+- **Java:** Primary programming language for backend development, chosen for its robustness, portability, and ecosystem.
+- **MySQL:** Relational database management system for efficiently storing and managing user and application data.
+  
+### Frontend
+- **HTML, CSS, JavaScript:** Core technologies for building and styling web frontends, providing structure, design, and interactivity.
+- **React:** Popular JavaScript library for building fast, dynamic, and component-based user interfaces.
+- **Node.js:** JavaScript runtime environment for developing scalable and high-performance network applications.
+- **Ant Design:** Comprehensive design framework for creating beautiful and responsive UI components.
+
+### Cloud Infrastructure
+- **AWS RDS (Amazon Relational Database Service):** Managed relational database service used for MySQL deployment, providing scalability and reliability.
+- **Google Cloud Storage:** Object storage solution for securely and efficiently storing application assets and backups.
+- **Google Compute Engine:** Infrastructure-as-a-Service (IaaS) providing scalable virtual machines for running our applications.
+- **Google App Engine:** Platform-as-a-Service (PaaS) offering for deploying and scaling web applications with ease.
+
+### APIs & Geospatial Services
+- **Google Geocoding API:** Service that provides geospatial data, enabling address-to-coordinates and coordinates-to-address conversions.
+- **Google Maps JavaScript API:** API for embedding fully interactive maps into web applications, providing features like markers, layers, and geolocation.
+- **GeoIndex:** Tool for indexing and querying geospatial data, enhancing our application's ability to handle location-based searches.
+
+### Search & Security
+- **Elasticsearch:** Distributed search engine enabling fast and efficient data retrieval, offering full-text search and analytics capabilities.
+- **Token-based Authentication:** Secure method for managing user sessions and protecting user data via stateless authentication tokens.
+
 
 ## License
 MIT License
