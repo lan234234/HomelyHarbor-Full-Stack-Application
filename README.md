@@ -70,6 +70,7 @@ Explore screenshots from HomelyHarbor showcasing each of our core features:
 
 ### Cloud Infrastructure
 - **AWS RDS (Amazon Relational Database Service):** Managed relational database service used for MySQL deployment, providing scalability and reliability.
+- **AWS Amplify: Managed static hosting and full-stack deployment service for web applications, offering scalability, custom domains.
 - **Google Cloud Storage:** Object storage solution for securely and efficiently storing application assets and backups.
 - **Google Compute Engine:** Infrastructure-as-a-Service (IaaS) providing scalable virtual machines for running our applications.
 - **Google App Engine:** Platform-as-a-Service (PaaS) offering for deploying and scaling web applications with ease.
