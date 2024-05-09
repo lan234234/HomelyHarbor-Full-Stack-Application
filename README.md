@@ -26,8 +26,11 @@ Explore screenshots from HomelyHarbor showcasing each of our core features:
 *Interface for hosts to upload new hotels with details and pictures.*
 
 ### Manage Hotel
+#### View and Delete Hosting Hotels
 ![Manage Hotel](.github/images/5_viewStay_3.png)
-*Interface for hosts to view and delete hotels.*
+
+#### View Hotel Reservations
+![View Hotel Reservation](.github/images/5_viewStayReservation.png)
 
 
 ### Search Hotel
