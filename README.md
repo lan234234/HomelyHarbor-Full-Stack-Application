@@ -29,6 +29,8 @@ Explore screenshots from HomelyHarbor showcasing each of our core features:
 #### View and Delete Hosting Hotels
 ![Manage Hotel](.github/images/5_viewStay_3.png)
 
+![Manage Hotel](.github/images/5_viewStay.png)
+
 #### View Hotel Reservations
 ![View Hotel Reservation](.github/images/5_viewStayReservation.png)
 
@@ -42,6 +44,9 @@ Explore screenshots from HomelyHarbor showcasing each of our core features:
 
 #### View Details
 ![Stay Info](.github/images/2_searchResult_2.png)
+
+![Stay Info](.github/images/2_searchResult_1.png)
+
 
 ### Manage Reservation
 #### Reserve Hotel
