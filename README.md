@@ -3,7 +3,7 @@
 
 Welcome to the backend repository of the HomelyHarbor. The frontend code can be found [here](https://github.com/lan234234/HomelyHarbor-Web-Application-Frontend).
 
-Visit us at: [HomelyHarbor](https://dev1390.d1bx1z9zgvsmt.amplifyapp.com/)
+Visit us at: [HomelyHarbor](https://staging.d12b4crili04f4.amplifyapp.com)
 
 ## Features
 - **Authentication:** Secure user profiles with registration, login, and logout functionalities.
