@@ -1,9 +1,8 @@
-# HomelyHarbor
-## _An online web platform for user with different roles (host or guest) to either uploading stay or reservating stays_
+# HomelyHarbor: An online stay rentals platform based on React and Spring Boot
 
-Welcome to the backend repository of the HomelyHarbor. The frontend code can be found [here](https://github.com/lan234234/HomelyHarbor-Web-Application-Frontend).
+**HomelyHarbor** connects hosts and guests, allowing hosts to list stays and guests to search and reserve accommodations.
 
-Visit us at: [HomelyHarbor](https://staging.d12b4crili04f4.amplifyapp.com)
+Visit HomelyHarbor: [HomelyHarbor](https://staging.d12b4crili04f4.amplifyapp.com)
 
 ## Features
 - **Authentication:** Secure user profiles with registration, login, and logout functionalities.
